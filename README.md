@@ -3,10 +3,11 @@
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)]()
 [![Python](https://img.shields.io/badge/python-3.14+-blue)]()
 [![Platform](https://img.shields.io/badge/platform-Windows%2011-lightgrey)]()
+[![GitHub](https://img.shields.io/badge/github-brunongmacho/attendance--reminder-181717?logo=github)](https://github.com/brunongmacho/attendance-reminder)
 
-A persistent Windows 11 desktop application that prevents missed attendance logs by aggressively reminding you to log in and log out of your attendance system.
+A persistent Windows 11 desktop application that prevents missed attendance logs by aggressively reminding you to log in and log out of your attendance system — built for overnight shift workers.
 
-Runs in the system tray, monitors Windows session lock/unlock and sleep/wake events, and provides escalating popup reminders until you explicitly confirm.
+Runs in the system tray, monitors Windows session lock/unlock and sleep/wake events, and provides escalating popup reminders until you explicitly confirm your attendance.
 
 ## Schedule
 
@@ -28,12 +29,22 @@ Reminders fire Mon–Fri login, Tue–Sat logout. No reminders on Sunday. Work p
 
 ## Quick Start
 
+### Run from source
+
 ```cmd
+git clone https://github.com/brunongmacho/attendance-reminder.git
+cd attendance-reminder
 pip install -r requirements.txt
 python main.py
 ```
 
-Or build a standalone EXE via `build.bat` → `dist\AttendanceReminder.exe`.
+### Build standalone EXE
+
+```cmd
+build.bat
+```
+
+The executable will be at `dist\AttendanceReminder.exe`.
 
 ## Features
 
